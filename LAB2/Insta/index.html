@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Вход</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .phone-image {
+            width: 380px;
+        }
+        .login-box {
+            background-color: #fff;
+            padding: 40px;
+            border: 1px solid #ddd;
+            width: 350px;
+            text-align: center;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color: #fafafa;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .login-box button:hover {
+            background-color: #007bb5;
+        }
+        .divider {
+            margin: 15px 0;
+            position: relative;
+            text-align: center;
+            color: #8e8e8e;
+        }
+        .divider:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #ddd;
+        }
+        .divider span {
+            background-color: #fff;
+            padding: 0 10px;
+            position: relative;
+        }
+        .links a {
+            color: #0095f6;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="instagram.png" alt="Phone" class="phone-image">
+        <div>
+            <div class="login-box">
+                <div style="font-size: 2rem; margin-bottom: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Instagram</div>
+                <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                <input type="password" placeholder="Пароль">
+                <button>Войти</button>
+                <div class="divider"><span>ИЛИ</span></div>
+                <div class="links">
+                    <a href="#">Войти через Facebook</a>
+                </div>
+                <div class="links">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>У вас ещё нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                <p>Установите приложение.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
