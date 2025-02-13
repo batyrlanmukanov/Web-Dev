@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <script charset="utf-8">
+            /*
+            alert(5 > 4);
+            alert("ананас" > "яблоко");
+            alert("2" > "12");
+            alert(undefined == null);
+            alert(undefined === null);
+            alert(null == "\n0\n");
+            alert(null === +"\n0\n");*/
+            //
+            /*
+            if ("0") {
+                alert ("Hello world!");
+            }
+            let num = prompt("input number", 0);
+            if (num>0){
+                alert(`${num} bigger than 1`);
+            } else if(num<0){
+                alert(`${num} less than 1`);
+            } else {
+                alert(`${num} equal to 0`);
+            }
+            let a = 3,
+                b = 2,
+                result;
+
+            (a+b<4)?
+                result = "Malo": result = "Mnogo";
+            login = "Director";
+            (login == 'Sotrudnik')?
+                message="hello":(login=="director")?
+                    message = "zdravstrvuite":(login=="")?
+                        message = "No login":message = "";
+            alert(message)
+            */
+            // || $ !
+            // alert (null || 2 || undefined) // 2
+            // alert (alert(1) || 2 || alert(3))
+            // alert ( 1 && null && 2)
+            // alert ( alert(1) && alert(2))
+            // alert ( null || 2&&3 || 4)
+            /*
+            let age = 12;
+            (age >=14 && age<= 90)?
+                alert("Yes"):alert("No");
+
+            let person = prompt("Кто там?");
+            if (person == 'admin'){
+                pass = prompt("Zdravstvuite");
+                (pass == "admin")?
+                    alert("Hello"):(pass==undefined || null || "")?
+                        alert("Canceled"):alert("Wrong password!")
+
+            } else if (person == undefined  || null || ""){
+                alert("Canceled")
+            } else alert("I don't know yo!");
+            */
+            //cycles and labels
+            /*outer: for (let i = 0; i < 3; i++) {
+
+                for (let j = 0; j < 3; j++) {
+
+                    let input = prompt(`Значение на координатах (${i},${j})`, '');
+
+                    // если пустая строка или Отмена, то выйти из обоих циклов
+                    if (!input) break outer; // (*)
+
+                    // сделать что-нибудь со значениями...
+                }
+            }
+
+            alert('Готово!');
+            */
+            // for (let i = 2; i<=10; i+=2){
+            //     alert(i);
+            // }
+            // let i=2
+            // while (i!=10){
+            //     alert(i);
+            //     i+=2;
+            // }
+            // let i;
+            // do{
+            //     i = prompt("Input num bigger than 100");
+            // } while (i<100 && (i!= undefined && i!= null));
+            let n = prompt("Input n");
+            for (i = 2; i<n; i++){
+                let j = i;
+                let flag = true;
+                for (let j = 2; j<i;j++){
+                    if (i%j==0){
+                        flag=false;
+                        break;
+                    }
+                }
+                if (flag){
+                    alert(j)
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

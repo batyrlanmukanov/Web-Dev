@@ -1,0 +1,98 @@
+<html>
+<head>
+    <script>
+        let str = "Привет";
+
+        str.test = 5;
+
+        alert(str.test);
+
+        //
+
+        alert(6.35.toFixed(20));
+        alert(Math.round(6.35 * 10) / 10);
+        alert((6.35 * 10).toFixed(20));
+
+        //
+        function readNumber() {
+            let num;
+
+            do {
+                num = prompt("Введите число", 0);
+            } while (!isFinite(num));
+
+            if (num === null || num === '') return null;
+
+            return +num;
+        }
+
+        alert(`Число: ${readNumber()}`);
+
+        //
+        function random(min, max) {
+            return min + Math.random() * (max - min);
+        }
+
+        //
+        function randomInteger(min, max) {
+            let rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+
+        function ucFirst(str) {
+            if (!str) return str;
+
+            return str[0].toUpperCase() + str.slice(1);
+        }
+        //
+        function checkSpam(str) {
+            let lowerStr = str.toLowerCase();
+
+            return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+        }
+        //
+        function truncate(str, maxlength) {
+            return (str.length > maxlength) ?
+                str.slice(0, maxlength - 1) + '…' : str;
+        }
+        //
+        function extractCurrencyValue(str) {
+            return +str.slice(1);
+        }
+        //
+        let fruits = ["Яблоки", "Груша", "Апельсин"];
+
+        let shoppingCart = fruits;
+
+        shoppingCart.push("Банан");
+
+        alert( fruits.length );
+        //
+        let styles = ["Джаз", "Блюз"];
+        styles.push("Рок-н-ролл");
+        styles[Math.floor((styles.length - 1) / 2)] = "Классика";
+        alert( styles.shift() );
+        styles.unshift("Рэп", "Регги");
+        //
+        function sumInput() {
+            let numbers = [];
+            while (true) {
+                let value = prompt("Введите число", 0);
+                if (value === "" || value === null || !isFinite(value)) break;
+
+                numbers.push(+value);
+            }
+            let sum = 0;
+            for (let number of numbers) {
+                sum += number;
+            }
+            return sum;
+        }
+        alert( sumInput() );
+        //
+
+</script>
+</head>
+<body>
+</body>
+</html>
