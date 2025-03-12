@@ -1,0 +1,33 @@
+<div class="album-container">
+    <h2>Albums</h2>
+
+    <div class="input-container">
+      <input [(ngModel)]="newAlbumTitle" placeholder="Enter album title" />
+      <button (click)="addAlbum()">➕ Add Album</button>
+    </div>
+  
+    <br>
+    <div class="albums-grid">
+      <div *ngFor="let album of albums" class="album-card">
+        <h3>
+          <a [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+        </h3>
+  
+        <div class="buttons">
+          <button *ngIf="album.id !== undefined" (click)="deleteAlbum(album.id!)">🗑 Delete</button>
+          <button *ngIf="album.id !== undefined" (click)="loadPhotos(album.id!)">📸 Show Photos</button>
+          
+        </div>
+  
+        <div *ngIf="album.photos?.length" class="photos-container">
+          <div *ngFor="let photo of album.photos" class="photo-card">
+            <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+            <p>{{ photo.title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  

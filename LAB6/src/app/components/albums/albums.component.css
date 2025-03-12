@@ -1,0 +1,101 @@
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Оптимальный размер */
+    gap: 12px; 
+    justify-content: center;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    min-height: 140px;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.album-card h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.album-card h3 a {
+    text-decoration: none;
+    color: #e24aad;
+    transition: color 0.2s;
+}
+
+.album-card h3 a:hover {
+    color: #c13c91;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    min-height: 40px; 
+    margin-top: auto;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #e24aad;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 120px; 
+    min-height: 40px; 
+}
+
+button:hover {
+    background-color: #c13c91;
+    transform: none;
+}
+
+button::before {
+    font-size: 14px;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    padding: 8px;
+    border: 2px solid #e24aad;
+    border-radius: 5px;
+    width: 220px;
+}
+
+.input-container button {
+    background-color: #e24aad;
+    padding: 8px 12px;
+}
+
+.input-container button:hover {
+    background-color: #c13c91;
+}
