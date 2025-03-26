@@ -1,0 +1,27 @@
+a = int(input())
+b = int(input())
+print(a if a > b else b)
+
+year = int(input())
+print("YES" if year % 4 == 0 and year % 100 != 0 or year % 400 == 0 else "NO")
+
+a = int(input())
+b = int(input())
+print("YES" if a == b or a != 1 and b != 1 else "NO")
+
+x = int(input())
+if x > 0:
+    print(1)
+elif x == 0:
+    print(0)
+else:
+    print(-1)
+
+a = int(input())
+b = int(input())
+if a > b:
+    print(1)
+elif b > a:
+    print(2)
+else:
+    print(0)

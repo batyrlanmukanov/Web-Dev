@@ -1,0 +1,34 @@
+n = int(input())
+i = 1
+while i ** 2 <= n:
+  print(i ** 2)
+  i += 1
+
+
+n = int(input())
+div = 2
+while n % div != 0:
+  div += 1
+print(div)
+
+
+n = int(input())
+t = 0
+while 2**t <= n:
+  print(2**t)
+  t += 1
+
+
+n = int(input())
+while n % 2 == 0:
+  n /= 2
+print("YES" if n == 1 else "NO")
+
+
+n = int(input())
+k = 0
+cur = 1
+while cur < n:
+  cur *= 2
+  k += 1
+print(k)

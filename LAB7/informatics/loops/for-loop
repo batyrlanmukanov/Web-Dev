@@ -1,0 +1,89 @@
+a = int(input())
+b = int(input())
+for i in range(a, b + 1):
+if i % 2 == 0:
+    print(i)
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+for i in range(a, b + 1):
+if i % d == c:
+    print(i)
+
+
+a = int(input())
+b = int(input())
+for i in range(a, b + 1):
+  if i ** 0.5 % 1.0 == 0:
+      print(i)
+
+x = input()
+d = input()
+cnt = 0
+for i in x:
+  if d == i:
+      cnt += 1
+print(cnt)
+
+
+x = input()
+res = 0
+for i in x:
+  res += int(i)
+print(res)
+
+x = input()
+print(x[::-1].lstrip('0'))
+
+x = int(input())
+for i in range(2, x + 1):
+  if x % i == 0:
+      print(i)
+      break
+
+
+x = int(input())
+for i in range(1, x + 1):
+  if x % i == 0:
+      print(i)
+
+
+x = int(input())
+cnt = 2
+for i in range(2, x // 2 + 1):
+  if x % i == 0:
+      cnt += 1
+print(cnt)
+
+
+res = 0
+for _ in range(100):
+  tmp = int(input())
+  res += tmp
+print(res)
+
+
+n = int(input())
+res = 0
+for _ in range(n):
+  tmp = int(input())
+  res += tmp
+print(res)
+
+
+x = input()
+res = 0
+for i in range(len(x)):
+  res += int(x[i]) * (2 ** (len(x) - i - 1))
+print(res)
+
+
+n = int(input())
+res = 0
+for _ in range(n):
+  tmp = int(input())
+  if tmp == 0:
+      res += 1
+print(res)
